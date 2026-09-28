@@ -1,0 +1,11 @@
+impl,run,seconds
+pure-python rsa 4.9.1,0,0.06993579999834765
+OpenSSL (pyca/cryptography),0,0.018577399998321198
+pure-python rsa 4.9.1,1,2.696513999999297
+OpenSSL (pyca/cryptography),1,0.026213999997708015
+pure-python rsa 4.9.1,2,2.6665269999975862
+OpenSSL (pyca/cryptography),2,0.04937989999962156
+pure-python rsa 4.9.1,3,2.350347799998417
+OpenSSL (pyca/cryptography),3,0.03531930000099237
+pure-python rsa 4.9.1,4,2.5628921999996237
+OpenSSL (pyca/cryptography),4,0.036247299998649396

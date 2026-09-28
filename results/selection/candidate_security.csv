@@ -1,0 +1,201 @@
+protocol,test,seed,accepted,violation,false_reject,reason
+C1_SIGMA_PQ,benign,0,True,False,False,
+C1_SIGMA_PQ,benign,1,True,False,False,
+C1_SIGMA_PQ,benign,2,True,False,False,
+C1_SIGMA_PQ,benign,3,True,False,False,
+C1_SIGMA_PQ,benign,4,True,False,False,
+C1_SIGMA_PQ,tamper_chunk,0,False,False,,record auth failed
+C1_SIGMA_PQ,tamper_chunk,1,False,False,,record auth failed
+C1_SIGMA_PQ,tamper_chunk,2,False,False,,record auth failed
+C1_SIGMA_PQ,tamper_chunk,3,False,False,,record auth failed
+C1_SIGMA_PQ,tamper_chunk,4,False,False,,record auth failed
+C1_SIGMA_PQ,reorder_chunks,0,False,False,,record auth failed
+C1_SIGMA_PQ,reorder_chunks,1,False,False,,record auth failed
+C1_SIGMA_PQ,reorder_chunks,2,False,False,,record auth failed
+C1_SIGMA_PQ,reorder_chunks,3,False,False,,record auth failed
+C1_SIGMA_PQ,reorder_chunks,4,False,False,,record auth failed
+C1_SIGMA_PQ,truncate,0,False,False,,truncated (no close_notify)
+C1_SIGMA_PQ,truncate,1,False,False,,truncated (no close_notify)
+C1_SIGMA_PQ,truncate,2,False,False,,truncated (no close_notify)
+C1_SIGMA_PQ,truncate,3,False,False,,truncated (no close_notify)
+C1_SIGMA_PQ,truncate,4,False,False,,truncated (no close_notify)
+C1_SIGMA_PQ,replay_server,0,False,False,,channel auth failed
+C1_SIGMA_PQ,replay_server,1,False,False,,channel auth failed
+C1_SIGMA_PQ,replay_server,2,False,False,,channel auth failed
+C1_SIGMA_PQ,replay_server,3,False,False,,channel auth failed
+C1_SIGMA_PQ,replay_server,4,False,False,,channel auth failed
+C1_SIGMA_PQ,misdelivery,0,False,False,,channel auth failed
+C1_SIGMA_PQ,misdelivery,1,False,False,,channel auth failed
+C1_SIGMA_PQ,misdelivery,2,False,False,,channel auth failed
+C1_SIGMA_PQ,misdelivery,3,False,False,,channel auth failed
+C1_SIGMA_PQ,misdelivery,4,False,False,,channel auth failed
+C1_SIGMA_PQ,malicious_server,0,False,False,,image hash != OEM manifest
+C1_SIGMA_PQ,malicious_server,1,False,False,,image hash != OEM manifest
+C1_SIGMA_PQ,malicious_server,2,False,False,,image hash != OEM manifest
+C1_SIGMA_PQ,malicious_server,3,False,False,,image hash != OEM manifest
+C1_SIGMA_PQ,malicious_server,4,False,False,,image hash != OEM manifest
+C1_SIGMA_PQ,rollback_server,0,False,False,,rollback
+C1_SIGMA_PQ,rollback_server,1,False,False,,rollback
+C1_SIGMA_PQ,rollback_server,2,False,False,,rollback
+C1_SIGMA_PQ,rollback_server,3,False,False,,rollback
+C1_SIGMA_PQ,rollback_server,4,False,False,,rollback
+C1_SIGMA_PQ,stale_metadata,0,False,False,,manifest expired (freeze)
+C1_SIGMA_PQ,stale_metadata,1,False,False,,manifest expired (freeze)
+C1_SIGMA_PQ,stale_metadata,2,False,False,,manifest expired (freeze)
+C1_SIGMA_PQ,stale_metadata,3,False,False,,manifest expired (freeze)
+C1_SIGMA_PQ,stale_metadata,4,False,False,,manifest expired (freeze)
+C1_SIGMA_PQ,unregistered,0,False,False,,client chain
+C1_SIGMA_PQ,unregistered,1,False,False,,client chain
+C1_SIGMA_PQ,unregistered,2,False,False,,client chain
+C1_SIGMA_PQ,unregistered,3,False,False,,client chain
+C1_SIGMA_PQ,unregistered,4,False,False,,client chain
+C2_KEMAUTH,benign,0,True,False,False,
+C2_KEMAUTH,benign,1,True,False,False,
+C2_KEMAUTH,benign,2,True,False,False,
+C2_KEMAUTH,benign,3,True,False,False,
+C2_KEMAUTH,benign,4,True,False,False,
+C2_KEMAUTH,tamper_chunk,0,False,False,,record auth failed
+C2_KEMAUTH,tamper_chunk,1,False,False,,record auth failed
+C2_KEMAUTH,tamper_chunk,2,False,False,,record auth failed
+C2_KEMAUTH,tamper_chunk,3,False,False,,record auth failed
+C2_KEMAUTH,tamper_chunk,4,False,False,,record auth failed
+C2_KEMAUTH,reorder_chunks,0,False,False,,record auth failed
+C2_KEMAUTH,reorder_chunks,1,False,False,,record auth failed
+C2_KEMAUTH,reorder_chunks,2,False,False,,record auth failed
+C2_KEMAUTH,reorder_chunks,3,False,False,,record auth failed
+C2_KEMAUTH,reorder_chunks,4,False,False,,record auth failed
+C2_KEMAUTH,truncate,0,False,False,,truncated (no close_notify)
+C2_KEMAUTH,truncate,1,False,False,,truncated (no close_notify)
+C2_KEMAUTH,truncate,2,False,False,,truncated (no close_notify)
+C2_KEMAUTH,truncate,3,False,False,,truncated (no close_notify)
+C2_KEMAUTH,truncate,4,False,False,,truncated (no close_notify)
+C2_KEMAUTH,replay_server,0,False,False,,channel auth failed
+C2_KEMAUTH,replay_server,1,False,False,,channel auth failed
+C2_KEMAUTH,replay_server,2,False,False,,channel auth failed
+C2_KEMAUTH,replay_server,3,False,False,,channel auth failed
+C2_KEMAUTH,replay_server,4,False,False,,channel auth failed
+C2_KEMAUTH,misdelivery,0,False,False,,channel auth failed
+C2_KEMAUTH,misdelivery,1,False,False,,channel auth failed
+C2_KEMAUTH,misdelivery,2,False,False,,channel auth failed
+C2_KEMAUTH,misdelivery,3,False,False,,channel auth failed
+C2_KEMAUTH,misdelivery,4,False,False,,channel auth failed
+C2_KEMAUTH,malicious_server,0,False,False,,image hash != OEM manifest
+C2_KEMAUTH,malicious_server,1,False,False,,image hash != OEM manifest
+C2_KEMAUTH,malicious_server,2,False,False,,image hash != OEM manifest
+C2_KEMAUTH,malicious_server,3,False,False,,image hash != OEM manifest
+C2_KEMAUTH,malicious_server,4,False,False,,image hash != OEM manifest
+C2_KEMAUTH,rollback_server,0,False,False,,rollback
+C2_KEMAUTH,rollback_server,1,False,False,,rollback
+C2_KEMAUTH,rollback_server,2,False,False,,rollback
+C2_KEMAUTH,rollback_server,3,False,False,,rollback
+C2_KEMAUTH,rollback_server,4,False,False,,rollback
+C2_KEMAUTH,stale_metadata,0,False,False,,manifest expired (freeze)
+C2_KEMAUTH,stale_metadata,1,False,False,,manifest expired (freeze)
+C2_KEMAUTH,stale_metadata,2,False,False,,manifest expired (freeze)
+C2_KEMAUTH,stale_metadata,3,False,False,,manifest expired (freeze)
+C2_KEMAUTH,stale_metadata,4,False,False,,manifest expired (freeze)
+C2_KEMAUTH,unregistered,0,False,False,,client chain
+C2_KEMAUTH,unregistered,1,False,False,,client chain
+C2_KEMAUTH,unregistered,2,False,False,,client chain
+C2_KEMAUTH,unregistered,3,False,False,,client chain
+C2_KEMAUTH,unregistered,4,False,False,,client chain
+C3_WRAPONCE,benign,0,True,False,False,
+C3_WRAPONCE,benign,1,True,False,False,
+C3_WRAPONCE,benign,2,True,False,False,
+C3_WRAPONCE,benign,3,True,False,False,
+C3_WRAPONCE,benign,4,True,False,False,
+C3_WRAPONCE,tamper_chunk,0,False,False,,chunk 3 hash
+C3_WRAPONCE,tamper_chunk,1,False,False,,chunk 1 hash
+C3_WRAPONCE,tamper_chunk,2,False,False,,chunk 0 hash
+C3_WRAPONCE,tamper_chunk,3,False,False,,chunk 1 hash
+C3_WRAPONCE,tamper_chunk,4,False,False,,chunk 1 hash
+C3_WRAPONCE,reorder_chunks,0,False,False,,chunk 1 hash
+C3_WRAPONCE,reorder_chunks,1,False,False,,chunk 1 hash
+C3_WRAPONCE,reorder_chunks,2,False,False,,chunk 1 hash
+C3_WRAPONCE,reorder_chunks,3,False,False,,chunk 1 hash
+C3_WRAPONCE,reorder_chunks,4,False,False,,chunk 1 hash
+C3_WRAPONCE,truncate,0,False,False,,chunk count
+C3_WRAPONCE,truncate,1,False,False,,chunk count
+C3_WRAPONCE,truncate,2,False,False,,chunk count
+C3_WRAPONCE,truncate,3,False,False,,chunk count
+C3_WRAPONCE,truncate,4,False,False,,chunk count
+C3_WRAPONCE,replay_server,0,False,False,,token not for this request (replay)
+C3_WRAPONCE,replay_server,1,False,False,,token not for this request (replay)
+C3_WRAPONCE,replay_server,2,False,False,,token not for this request (replay)
+C3_WRAPONCE,replay_server,3,False,False,,token not for this request (replay)
+C3_WRAPONCE,replay_server,4,False,False,,token not for this request (replay)
+C3_WRAPONCE,misdelivery,0,False,False,,token not for this request (replay)
+C3_WRAPONCE,misdelivery,1,False,False,,token not for this request (replay)
+C3_WRAPONCE,misdelivery,2,False,False,,token not for this request (replay)
+C3_WRAPONCE,misdelivery,3,False,False,,token not for this request (replay)
+C3_WRAPONCE,misdelivery,4,False,False,,token not for this request (replay)
+C3_WRAPONCE,malicious_server,0,False,False,,OEM signature
+C3_WRAPONCE,malicious_server,1,False,False,,OEM signature
+C3_WRAPONCE,malicious_server,2,False,False,,OEM signature
+C3_WRAPONCE,malicious_server,3,False,False,,OEM signature
+C3_WRAPONCE,malicious_server,4,False,False,,OEM signature
+C3_WRAPONCE,rollback_server,0,False,False,,OEM signature
+C3_WRAPONCE,rollback_server,1,False,False,,OEM signature
+C3_WRAPONCE,rollback_server,2,False,False,,OEM signature
+C3_WRAPONCE,rollback_server,3,False,False,,OEM signature
+C3_WRAPONCE,rollback_server,4,False,False,,OEM signature
+C3_WRAPONCE,stale_metadata,0,False,False,,token expired
+C3_WRAPONCE,stale_metadata,1,False,False,,token expired
+C3_WRAPONCE,stale_metadata,2,False,False,,token expired
+C3_WRAPONCE,stale_metadata,3,False,False,,token expired
+C3_WRAPONCE,stale_metadata,4,False,False,,token expired
+C3_WRAPONCE,unregistered,0,False,False,,unknown vehicle
+C3_WRAPONCE,unregistered,1,False,False,,unknown vehicle
+C3_WRAPONCE,unregistered,2,False,False,,unknown vehicle
+C3_WRAPONCE,unregistered,3,False,False,,unknown vehicle
+C3_WRAPONCE,unregistered,4,False,False,,unknown vehicle
+C4_WRAPONCE_BATCH,benign,0,True,False,False,
+C4_WRAPONCE_BATCH,benign,1,True,False,False,
+C4_WRAPONCE_BATCH,benign,2,True,False,False,
+C4_WRAPONCE_BATCH,benign,3,True,False,False,
+C4_WRAPONCE_BATCH,benign,4,True,False,False,
+C4_WRAPONCE_BATCH,tamper_chunk,0,False,False,,chunk 3 hash
+C4_WRAPONCE_BATCH,tamper_chunk,1,False,False,,chunk 0 hash
+C4_WRAPONCE_BATCH,tamper_chunk,2,False,False,,chunk 0 hash
+C4_WRAPONCE_BATCH,tamper_chunk,3,False,False,,chunk 1 hash
+C4_WRAPONCE_BATCH,tamper_chunk,4,False,False,,chunk 2 hash
+C4_WRAPONCE_BATCH,reorder_chunks,0,False,False,,chunk 1 hash
+C4_WRAPONCE_BATCH,reorder_chunks,1,False,False,,chunk 1 hash
+C4_WRAPONCE_BATCH,reorder_chunks,2,False,False,,chunk 1 hash
+C4_WRAPONCE_BATCH,reorder_chunks,3,False,False,,chunk 1 hash
+C4_WRAPONCE_BATCH,reorder_chunks,4,False,False,,chunk 1 hash
+C4_WRAPONCE_BATCH,truncate,0,False,False,,chunk count
+C4_WRAPONCE_BATCH,truncate,1,False,False,,chunk count
+C4_WRAPONCE_BATCH,truncate,2,False,False,,chunk count
+C4_WRAPONCE_BATCH,truncate,3,False,False,,chunk count
+C4_WRAPONCE_BATCH,truncate,4,False,False,,chunk count
+C4_WRAPONCE_BATCH,replay_server,0,False,False,,token not for this request (replay)
+C4_WRAPONCE_BATCH,replay_server,1,False,False,,token not for this request (replay)
+C4_WRAPONCE_BATCH,replay_server,2,False,False,,token not for this request (replay)
+C4_WRAPONCE_BATCH,replay_server,3,False,False,,token not for this request (replay)
+C4_WRAPONCE_BATCH,replay_server,4,False,False,,token not for this request (replay)
+C4_WRAPONCE_BATCH,misdelivery,0,False,False,,token not for this request (replay)
+C4_WRAPONCE_BATCH,misdelivery,1,False,False,,token not for this request (replay)
+C4_WRAPONCE_BATCH,misdelivery,2,False,False,,token not for this request (replay)
+C4_WRAPONCE_BATCH,misdelivery,3,False,False,,token not for this request (replay)
+C4_WRAPONCE_BATCH,misdelivery,4,False,False,,token not for this request (replay)
+C4_WRAPONCE_BATCH,malicious_server,0,False,False,,OEM signature
+C4_WRAPONCE_BATCH,malicious_server,1,False,False,,OEM signature
+C4_WRAPONCE_BATCH,malicious_server,2,False,False,,OEM signature
+C4_WRAPONCE_BATCH,malicious_server,3,False,False,,OEM signature
+C4_WRAPONCE_BATCH,malicious_server,4,False,False,,OEM signature
+C4_WRAPONCE_BATCH,rollback_server,0,False,False,,OEM signature
+C4_WRAPONCE_BATCH,rollback_server,1,False,False,,OEM signature
+C4_WRAPONCE_BATCH,rollback_server,2,False,False,,OEM signature
+C4_WRAPONCE_BATCH,rollback_server,3,False,False,,OEM signature
+C4_WRAPONCE_BATCH,rollback_server,4,False,False,,OEM signature
+C4_WRAPONCE_BATCH,stale_metadata,0,False,False,,token expired
+C4_WRAPONCE_BATCH,stale_metadata,1,False,False,,token expired
+C4_WRAPONCE_BATCH,stale_metadata,2,False,False,,token expired
+C4_WRAPONCE_BATCH,stale_metadata,3,False,False,,token expired
+C4_WRAPONCE_BATCH,stale_metadata,4,False,False,,token expired
+C4_WRAPONCE_BATCH,unregistered,0,False,False,,unknown vehicle
+C4_WRAPONCE_BATCH,unregistered,1,False,False,,unknown vehicle
+C4_WRAPONCE_BATCH,unregistered,2,False,False,,unknown vehicle
+C4_WRAPONCE_BATCH,unregistered,3,False,False,,unknown vehicle
+C4_WRAPONCE_BATCH,unregistered,4,False,False,,unknown vehicle

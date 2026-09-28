@@ -1,0 +1,46 @@
+# FROZEN before any TEST-split run (2026-09-25).  Do not edit after results/test/ exists.
+# Selected by the rule in MODEL_SELECTION_REPORT.md from DEV-only screening + Optuna TPE tuning.
+name: WrapCast
+base_candidate: C4_WRAPONCE_BATCH
+selected_trial: 17
+selection_metric: "J = mean_s makespan/makespan_ref + 0.1 * mean_s srvcpu/srvcpu_ref over DEV scenarios, DEV seeds {0,1}"
+selection_tie_rule: "configs within 0.5% of best J are tied; prefer smaller chunk (vehicle RAM), then lower server CPU"
+confirmation: "DEV seed 2 (not seen by the tuner): no failures, within 1% of tied alternatives"
+
+crypto:
+  kem: X-Wing                      # ML-KEM-768 + X25519 hybrid (draft-connolly-cfrg-xwing-kem)
+  director_signature: Falcon-512   # online authorization key (server signs, vehicles verify)
+  oem_signature: ML-DSA-65         # offline OEM release key
+  hash: SHA-256
+  aead: AES-256-GCM
+  kdf: HKDF-SHA256
+  security_level: "NIST category 1 (Falcon-512 / X25519 part) to 3 (ML-KEM-768, ML-DSA-65)"
+
+authorization:
+  batched: true
+  batch_max: 16
+  batch_window_s: 0.01
+  forward_secret_ephemeral: false
+  key_confirmation_report: true
+  token_lifetime_s: 86400
+  freshness: vehicle nonce n_V bound into every token
+
+delivery:
+  content_encryption: encrypt-once STREAM (nonce = prefix7 | counter32 | last-flag8)
+  chunk_bytes: 16384
+  chunk_auth: hashlist            # OEM-signed per-chunk SHA-256 list, verify-before-decrypt
+  multicast_rate_mbps: 6.0         # depot multicast carousel PHY rate (802.11g basic rate)
+  resumable: true
+  manifest_lifetime_s: 2592000
+
+evaluation:
+  splits: DATA_SPLIT_MANIFEST.csv
+  test_seeds: [100, 101, 102, 103, 104, 105, 106, 107, 108, 109]
+  robustness_seeds: [200, 201, 202, 203, 204]
+  primary_metric: makespan
+  secondary_metrics: [lat_mean, lat_p95, server_cpu_per_vehicle_ms, auth_lat_mean, wire_hs_bytes, crypto_vehicle_ms]
+  security_gate: "0 violations and 0 false rejections on otasim/attacks.py TESTS, 20 seeds"
+  statistics: "paired Wilcoxon + paired t over seeds, Holm across benchmarks, rank-biserial and d_z"
+  measurement: "wall-clock perf_counter, pinned core, HIGH priority, 3 warm-up sessions; per (scenario, seed) cell, bulk symmetric cost is executed on the first 5 vehicles and resampled for the remainder of the fleet, which preserves the correct O(1)/O(|P|) scaling law at every fleet size while keeping wall-clock cost tractable up to N=3000"
+  server_cores: 8
+  tcp_timeout_s: 20

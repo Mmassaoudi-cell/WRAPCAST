@@ -1,0 +1,8 @@
+{
+  "best_params": {
+    "chunk": 262144,
+    "dir_sig": "Falcon-512",
+    "mc_rate": 6.0
+  },
+  "best_J": 0.8982478982248907
+}

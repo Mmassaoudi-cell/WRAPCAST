@@ -1,0 +1,24 @@
+# Environments / caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Manuscript (figures, tables, compiled paper) — kept out of this repo
+paper/
+
+# Source-paper extraction and third-party PDF (not this project's own work)
+source_extract/
+*.pdf
+
+# Development scratch, logs, packaging artifacts
+scratch/
+logs/
+Innovative paper 38.zip
+REPRODUCTION_TABLES.md
+results/manuscript_audit.txt
+results/manuscript_numbers.csv
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
