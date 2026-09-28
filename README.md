@@ -1,10 +1,6 @@
 # WrapCast — reproduction of Kumar et al. (IEEE TII 2026) and an encrypt-once post-quantum OTA design
 
-This repository contains:
-
-1. a faithful re-implementation and reproduction study of *"A Secure and Post-Quantum-Resilient OTA Software Update Framework for Industrial Autonomous Vehicles"* (Kumar et al., IEEE TII 2026, DOI 10.1109/TII.2026.3722485);
-2. **WrapCast**, an independently designed post-quantum OTA protocol (encrypt-once content, per-vehicle X-Wing key wrapping, batched Director authorization, OEM-signed chunk hash list, key-confirmation reports);
-3. ten benchmark protocols, a trace-driven network emulator, an executable security conformance suite, all raw and aggregated results, and the IEEE manuscript.
+This repository contains **WrapCast**, an independently designed post-quantum OTA protocol (encrypt-once content, per-vehicle X-Wing key wrapping, batched Director authorization, OEM-signed chunk hash list, key-confirmation reports)
 
 ## Environment
 
