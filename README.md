@@ -1,4 +1,4 @@
-# WrapCast — reproduction of Kumar et al. (IEEE TII 2026) and an encrypt-once post-quantum OTA design
+# WrapCast
 
 This repository contains **WrapCast**, an independently designed post-quantum OTA protocol (encrypt-once content, per-vehicle X-Wing key wrapping, batched Director authorization, OEM-signed chunk hash list, key-confirmation reports)
 
